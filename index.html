@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+ <head> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+ </head> 
+ <body> 
+  <div class="title"> 
+   <h1> Drawing Canvas </h1> 
+  </div> 
+  <div class="box"> 
+   <div class="color"></div> 
+   <div class="labels"> 
+    <h1>H</h1> 
+    <h1>S</h1> 
+    <h1>L</h1> 
+   </div> 
+   <div class="control"> 
+    <input type="range" value="0" min="0" max="360" oninput="setHue(this.value)"> 
+    <input type="range" value="50" min="0" max="100" oninput="setSat(this.value)"> 
+    <input type="range" value="50" min="0" max="100" oninput="setLight(this.value)"> 
+   </div> 
+  </div> 
+  <div class="canvas-box"> 
+   <svg width="80vw" height="70vh"> 
+    <path id="pp"></path> 
+   </svg> 
+  </div> 
+ </body>
+</html>
